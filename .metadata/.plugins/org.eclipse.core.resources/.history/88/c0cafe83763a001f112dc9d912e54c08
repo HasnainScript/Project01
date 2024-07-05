@@ -57,13 +57,6 @@ public class Application {
                         System.out.println("Result : " + subtract(num1, num2));
                     }
                     break;
-                case "permutations":
-                    if (args.length == 3) {
-                        double num1 = Double.parseDouble(args[1]);
-                        double num2 = Double.parseDouble(args[2]);
-                        System.out.println("Result : " + permutations(num1, num2));
-                    }
-                    break;
                 case "add":
                     if (args.length == 3) {
                         double num1 = Double.parseDouble(args[1]);
@@ -115,13 +108,6 @@ public class Application {
 					double num8 = scanner.nextDouble();
 					System.out.println("Result : " + divide(num7 , num8));
 					break;
-				case "permutations":
-					System.out.println ("Enter the first operand :");
-					double num9 = scanner.nextDouble();
-					System.out.println("Enter the second operand :");
-					double num10 = scanner.nextDouble();
-					System.out.println("Result : " + permutations(num9 , num10));
-					break;
 			
 				default: System.out.println("Invalid Operator");
 			 }
@@ -155,28 +141,28 @@ public class Application {
 			return a - b;
 		}
 	 
-	 public static double permutations(double total, double selected) {
+	 public static int permutations(int total, int selected) {
 	        
 	        if (selected < 0 || selected > 100) {
 	            throw new IllegalArgumentException("Number of selected items must be between 0 and 100.");
 	        }
-	        if (total < 0 || total > 100) {
+	        if (totalElements < 0 || totalElements > 100) {
 	            throw new IllegalArgumentException("Total number of elements must be between 0 and 100.");
 	        }
-	        if (selected > selected) {
+	        if (selectedItems > totalElements) {
 	            throw new IllegalArgumentException("Number of selected items cannot exceed total number of elements.");
 	        }
 
 	        // Base cases
-	        if (selected == 0) {
+	        if (selectedItems == 0) {
 	            return 1; // 0! = 1 by definition
 	        }
-	        if (total == 0 || selected > total) {
+	        if (totalElements == 0 || selectedItems > totalElements) {
 	            return 0; // No permutations possible
 	        }
 
 	        // Recursive case
-	        return permutations(total - 1, selected - 1) * total;
+	        return calculatePermutations(totalElements - 1, selectedItems - 1) * totalElements;
 	    }
 	 
 }

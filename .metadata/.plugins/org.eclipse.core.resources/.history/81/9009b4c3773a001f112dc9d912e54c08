@@ -57,13 +57,6 @@ public class Application {
                         System.out.println("Result : " + subtract(num1, num2));
                     }
                     break;
-                case "permutations":
-                    if (args.length == 3) {
-                        double num1 = Double.parseDouble(args[1]);
-                        double num2 = Double.parseDouble(args[2]);
-                        System.out.println("Result : " + permutations(num1, num2));
-                    }
-                    break;
                 case "add":
                     if (args.length == 3) {
                         double num1 = Double.parseDouble(args[1]);

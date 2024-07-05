@@ -57,13 +57,6 @@ public class Application {
                         System.out.println("Result : " + subtract(num1, num2));
                     }
                     break;
-                case "permutations":
-                    if (args.length == 3) {
-                        double num1 = Double.parseDouble(args[1]);
-                        double num2 = Double.parseDouble(args[2]);
-                        System.out.println("Result : " + permutations(num1, num2));
-                    }
-                    break;
                 case "add":
                     if (args.length == 3) {
                         double num1 = Double.parseDouble(args[1]);
@@ -115,12 +108,12 @@ public class Application {
 					double num8 = scanner.nextDouble();
 					System.out.println("Result : " + divide(num7 , num8));
 					break;
-				case "permutations":
+				case "permutation":
 					System.out.println ("Enter the first operand :");
 					double num9 = scanner.nextDouble();
 					System.out.println("Enter the second operand :");
 					double num10 = scanner.nextDouble();
-					System.out.println("Result : " + permutations(num9 , num10));
+					System.out.println("Result : " + permutation(num9 , num10));
 					break;
 			
 				default: System.out.println("Invalid Operator");

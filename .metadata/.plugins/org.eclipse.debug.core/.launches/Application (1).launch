@@ -13,6 +13,5 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.hasnain.calculator.Application"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Lab01"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="divide 10 2"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lab01"/>
 </launchConfiguration>
