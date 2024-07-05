@@ -1,0 +1,36 @@
+/**
+* <h1 > Application.java </h1 >
+* <p>
+* This class is designed for processing Hello World in Java .
+* It is part of Lab 1 Exercise A.
+* </p>
+* <p>
+* <b> Note :</b> This file runs Hello World Program
+* </p>
+*
+* <p><b> Submission Date :</b> July 4th, 2024 </p>
+*
+* @author Mahdi Ansari
+* @author William Arthur Philip Louis
+* @version 1.0
+*/
+
+package com.hasnain.calculator;
+import java.util.Scanner;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		if(args.length > 0 ) {
+			//process
+		} else {
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("Enter Operation (e.g., add, subtract, multiply, divide):");
+			String operation = scanner.next();
+		}
+		
+	}
+
+}
